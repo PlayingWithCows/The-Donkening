@@ -56,13 +56,15 @@ if(product==0){
 
     }
     public void GrantNumericPacifier(){
-         num.AddNum(productionPerCycle);
          idle=true;
+         num.AddNum(productionPerCycle);
+         
 
     }
     public void CreatePrinter(){
-         num.AddPrinter(1);
          idle=true;
+         num.AddPrinter(1);
+         
 
     }
 }

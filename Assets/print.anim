@@ -127,17 +127,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.36666667
         value: {x: 0.058360443, y: 0.112335846, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0.7806296, z: 0}
+        outSlope: {x: 0, y: 0.7806296, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 0.55
-        value: {x: 0.433, y: 0.10879231, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        value: {x: 0.433, y: 0.2, z: 0}
+        inSlope: {x: 0, y: 0.5999838, z: 0}
+        outSlope: {x: 0, y: 0.5999838, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -771,17 +771,17 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.36666667
         value: 0.112335846
-        inSlope: 0
-        outSlope: 0
+        inSlope: 0.7806296
+        outSlope: 0.7806296
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.55
-        value: 0.10879231
-        inSlope: 0
-        outSlope: 0
+        value: 0.2
+        inSlope: 0.5999838
+        outSlope: 0.5999838
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -1360,7 +1360,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1
-    functionName: GrantNumeric
+    functionName: GrantNumericPacifier
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
