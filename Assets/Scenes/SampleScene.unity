@@ -1433,5 +1433,15 @@ PrefabInstance:
       propertyPath: num
       value: 
       objectReference: {fileID: 1696369800}
+    - target: {fileID: 5380564153612857854, guid: 48b3a7562c73b774b80541848e4e0170,
+        type: 3}
+      propertyPath: product
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380564153612857854, guid: 48b3a7562c73b774b80541848e4e0170,
+        type: 3}
+      propertyPath: printerProdSpeed
+      value: 4.19
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48b3a7562c73b774b80541848e4e0170, type: 3}

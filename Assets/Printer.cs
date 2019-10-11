@@ -10,7 +10,7 @@ public class Printer : MonoBehaviour
     public int productionPerCycle;
     public Numerics num;
 
-    private bool idle = true;
+    public bool idle = true;
 
     public Animator animator;
 
