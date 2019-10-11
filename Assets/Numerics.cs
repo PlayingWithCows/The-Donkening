@@ -7,12 +7,16 @@ public class Numerics : MonoBehaviour
 {
 
     public int pacifiers;
+    public int printers;
+    public int resources;
 
-    private TMPro.TextMeshProUGUI pacifiersDisplay;
+    public TMPro.TextMeshProUGUI pacifiersDisplay;
     // Start is called before the first frame update
     void Start()
     {
+        resources = 100000;
         pacifiers = 0;
+        printers = 1;
     }
 
     // Update is called once per frame
@@ -23,6 +27,10 @@ public class Numerics : MonoBehaviour
 
     public void AddNum(int number){
     pacifiers += number;
+    UpdateScore();
+    }
+      public void AddPrinter(int number){
+    printers += number;
     UpdateScore();
     }
 

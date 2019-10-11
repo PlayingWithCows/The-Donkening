@@ -608,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pacifiers: 0
+  pacifiersDisplay: {fileID: 1942029309}
 --- !u!1 &1942029307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,11 +1040,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2106578667}
     m_Modifications:
-    - target: {fileID: 5380564153612857853, guid: 48b3a7562c73b774b80541848e4e0170,
-        type: 3}
-      propertyPath: m_Name
-      value: Printer
-      objectReference: {fileID: 0}
     - target: {fileID: 5380564153612857852, guid: 48b3a7562c73b774b80541848e4e0170,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1099,6 +1095,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5380564153612857853, guid: 48b3a7562c73b774b80541848e4e0170,
+        type: 3}
+      propertyPath: m_Name
+      value: Printer
+      objectReference: {fileID: 0}
     - target: {fileID: 5380564153612857854, guid: 48b3a7562c73b774b80541848e4e0170,
         type: 3}
       propertyPath: num
@@ -1113,6 +1114,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.059
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075035677, guid: 48b3a7562c73b774b80541848e4e0170, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075035677, guid: 48b3a7562c73b774b80541848e4e0170, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48b3a7562c73b774b80541848e4e0170, type: 3}

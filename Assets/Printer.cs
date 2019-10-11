@@ -5,7 +5,8 @@ using UnityEngine;
 public class Printer : MonoBehaviour
 {
 
-    public float printSpeed;
+    public float pacifProdSpeed;
+    public float printerProdSpeed;
     public int productionPerCycle;
     public Numerics num;
 
@@ -15,8 +16,11 @@ public class Printer : MonoBehaviour
 
     public int product = 0;
 
+    public int pacifCost = 10;
+    public int printerCost = 1000;
 
-private float timeSinceLastCycle;
+
+public float timeSinceLastCycle;
 
 
     // Start is called before the first frame update
@@ -24,28 +28,41 @@ private float timeSinceLastCycle;
     {
         num = GameObject.FindObjectOfType<Numerics>();
         timeSinceLastCycle=Time.time;
-        
+        animator = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
     {
-    if(timeSinceLastCycle < Time.time+printSpeed && idle==true){
-        ProducePacifier();
-        timeSinceLastCycle = Time.time;
+    if(idle==true){
+        Produce();
+        
     }    
     }
 
-    private void ProducePacifier(){
-        idle=false;
-animator.SetTrigger(product);
-animator.speed = printSpeed;
+    private void Produce(){
+   idle=false;
+        timeSinceLastCycle = Time.time;
+
+if(product==0){
+         
+        animator.SetFloat("PrintSpeed", 1f/pacifProdSpeed);
+    animator.SetTrigger("printPacifier");
+}else if(product==1){
+     animator.SetFloat("PrintSpeed", 1f/printerProdSpeed);
+    animator.SetTrigger("printPrinter");
+}
+
        
 
     }
-    public void GrantNumeric(){
+    public void GrantNumericPacifier(){
          num.AddNum(productionPerCycle);
          idle=true;
 
     }
+    public void CreatePrinter(){
+         num.AddPrinter(1);
+         idle=true;
 
+    }
 }
