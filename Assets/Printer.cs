@@ -5,8 +5,8 @@ using UnityEngine;
 public class Printer : MonoBehaviour
 {
 
-    public float pacifProdSpeed;
-    public float printerProdSpeed;
+    public float pacifProdSpeed = 1f;
+    public float printerProdSpeed = 10f;
     public int productionPerCycle;
     public Numerics num;
 
