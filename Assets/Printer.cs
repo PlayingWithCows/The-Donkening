@@ -20,14 +20,14 @@ public class Printer : MonoBehaviour
     public int printerCost = 1000;
 
 
-public float timeSinceLastCycle;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
         num = GameObject.FindObjectOfType<Numerics>();
-        timeSinceLastCycle=Time.time;
+     
         animator = GetComponent<Animator>();
     }
     // Update is called once per frame
@@ -41,7 +41,7 @@ public float timeSinceLastCycle;
 
     private void Produce(){
    idle=false;
-        timeSinceLastCycle = Time.time;
+    
 
 if(product==0){
          
@@ -62,6 +62,7 @@ if(product==0){
 
     }
     public void CreatePrinter(){
+        Debug.Log("printer created");
          idle=true;
          num.AddPrinter(1);
          
